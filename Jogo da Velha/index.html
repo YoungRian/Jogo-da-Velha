@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jogo da Velha</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/JR4Life-logo.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase static-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Jogo da Velha</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" 
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                <i class="fas fa-bars"></i>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Historia e Regras</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Inicie seus Jogos</h1>
+                <!-- Game -->
+                <div id="VezJogador">
+                    <h2 style="margin-top: 25px;">Vez do Jogador</h2>
+                    <img src="" border="0" height="50">
+                </div> 
+                <div class="quadrados" style="margin-top: 25px;">
+                    <img src="assets/img/Quadro branco.png" style="margin-bottom: 2px;" id="a" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <img src="assets/img/Quadro branco.png" style="margin-bottom: 2px;" id="b" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <img src="assets/img/Quadro branco.png" style="margin-bottom: 2px;" id="c" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <br>
+                    <img src="assets/img/Quadro branco.png" style="margin-bottom: 2px; margin-top: 2px;" id="d" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <img src="assets/img/Quadro branco.png" style="margin-bottom: 2px; margin-top: 2px;" id="e" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <img src="assets/img/Quadro branco.png" style="margin-bottom: 2px; margin-top: 2px;" id="f" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <br>
+                    <img src="assets/img/Quadro branco.png" style="margin-top: 2px;" id="g" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <img src="assets/img/Quadro branco.png" style="margin-top: 2px;" id="h" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                    <img src="assets/img/Quadro branco.png" style="margin-top: 2px;" id="i" id="tudo" class="butoes" jogada="" onclick="iniciar()"></img>
+                </div>
+                <div id="botao">
+                    <input type="button" id="buttonRestar" onclick="restar()" value="Recomeçar" style="margin-top: 150px;">
+                </div>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="margin-top: 40px;">Historia</h2>
+                <h6 style="text-align: center; margin-top: 15px">O jogo se popularizou na Inglaterra do século 19, quando mulheres se reuniam
+                nos finais de tarde para conversar e bordar. Porém, as mais idosas, por não
+                conseguirem mais bordar em razão de suas vistas fracas, se entretiam com o
+                jogo. que passou a ser chamado de Noughts and Crosses (nós e cruzes, em português. Uma referência ao bordado). E como era jogado por mulheres inglesas
+                idosas, quando o jogo veio para o Brasil, ficou conhecido como Jogo da Velha.
+                Mas a origem do jogo é muito mais antiga... escavações realizadas no templo de
+                Kurna, no Egito, encontraram referências a ele que datavam do século 14 antes
+                de Cristo, mas outros achados arqueológicos comprovam que o Jogo da Velha e
+                muitos outros passatempos similares foram desenvolvidos independentemente
+                nas mais diferentes regiões do planeta: ele também era jogado na China antiga,
+                na América pré-colombiana e no Império Romano, entre outros.</h5>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="margin-top: 40px;">Regras</h2>
+                <h6 style="text-align: center; margin-top: 15px">No modo básico do jogo, participam duas pessoas, que jogam alternadamente, 
+                preenchendo cada um dos espaços vazios. Cada participante poderá usar um símbolo (X ou O). Vence o jogador que conseguir formar primeiro uma linha com três símbolos iguais, 
+                seja ela na horizontal, vertical ou diagonal.</h5>
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5"></div>
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <img class="img-fluid" src="assets/img/jogo da velha imagem.png" height="900" width="650" alt="..." />
+                        </div>
+                    </div>  
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Meu Contato</h2>
+                <h6 style="text-align: center; margin-top: 15px">Telefone: 84 9965-0665</h6>
+                <h6 style="text-align: center; margin-top: 10px">Email: jdsnrian01@gmail.com</h6>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
